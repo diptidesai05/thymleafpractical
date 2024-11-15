@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>condition statement in thymeleaf</title>
+</head>
+<body>
+	<h1>
+	<h2>User is <span th:text="${isActive} ? 'ACTIVE' : 'NOT ACTIVE'"></span><h2>
+		
+		
+			
+<div th:switch="${#Lists.size(myList)}">
+ <h1 th:case ="'0'">Zero element</h1>
+ <h1 th:case ="'1'">Zero element</h1>
+ <h1 th:case ="*">list contains more than one elements</h1>
+</div>
+
+
+    
+</body>
+</html>    
